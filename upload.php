@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 function validate($info){
 	
 	$fileallowed = array('jpg','png');
@@ -19,7 +19,7 @@ upload();
 function upload(){
 	
 	$data = array();
-	$uploads_dir = '/var/www/git-test/uploads';
+	$uploads_dir = './uploads';
 	$name = $_FILES['USER_upload']['name'];
 	
 	$taget_file = $uploads_dir."/".$name;
@@ -35,7 +35,8 @@ function upload(){
 		if(validate($data)){
 					
 	        $tmp_name = $_FILES["USER_upload"]["tmp_name"];
-	        move_uploaded_file($tmp_name, $taget_file);		    
+	        move_uploaded_file($tmp_name, $taget_file);
+			echo 'done!!';		    
 		}
 	}
 }
