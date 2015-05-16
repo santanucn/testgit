@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 function validate($info){
 	
 	$fileallowed = array('jpg','png');
@@ -17,17 +17,28 @@ function validate($info){
 
 upload();
 function upload(){
-
+	
 	$data = array();
-	$uploads_dir = '/uploads';
-	$name = $_FILES["user_upload"]["name"];
-	$data['size'] = getimagesize($name);	
-    $data['ext'] = pathinfo($name, PATHINFO_EXTENSION);
-    if(isset($_POST["submit"])) {
+	$uploads_dir = './uploads';
+	$name = $_FILES['USER_upload']['name'];
+	
+	$taget_file = $uploads_dir."/".$name;
+	
+	$byte_size = $_FILES['USER_upload']['size']/1000;
+	$data['size'] = (int)$byte_size;
+	
+	$explode = explode('.', $name);
+    $data['ext'] = $extension = end($explode);
+    
+    if(isset($_POST['upload'])) {
+    	
 		if(validate($data)){
 					
-	        $tmp_name = $_FILES["user_upload"]["tmp_name"];
-	        move_uploaded_file($tmp_name, "$uploads_dir/$name");		    
+	        $tmp_name = $_FILES["USER_upload"]["tmp_name"];
+	        move_uploaded_file($tmp_name, $taget_file);
+			echo 'done!!';		    
+		}else{
+			echo "failed!!";
 		}
 	}
 }
