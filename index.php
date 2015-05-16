@@ -23,8 +23,7 @@
                     <li>Test 2 text goes here</li>
                     <li>Test 3 text goes here</li>
                     <li>Test 4 text goes here</li>
-                    <li>Test 5 text goes here</li>
-                    <li>Test 6 text goes here</li>
+					<li>mt new info</li>
                 </ul>
             </div>
         </div>
