@@ -12,7 +12,7 @@
     	<div class="contaner">
         	<div class="leftside">
             	<h1>Upload Your Image</h1>
-            	<form action="" method="post">
+            	<form action="upload.php" enctype="multipart/form-data" method="post">
                 	<input name="USER_upload" type="file" class="uploadbnt"  />
                     <input name="upload" type="submit" class="subbnt" />
                 </form>
