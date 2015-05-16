@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body {
+	padding:0px;
+	margin:0px;
+	font:normal 14px Arial, Tahoma, sans-serif;
+}
+.wrapper {
+	width:100%;
+	height:auto;
+}
+
+.wrapper .contaner {
+	max-width:1000px;
+	height:auto;
+	margin:0 auto;
+	padding:0px;
+}
+
+.wrapper .contaner .leftside {
+	width: 70%;
+	float:left;
+	padding-right:20px;
+	box-sizing:border-box;
+}
+.wrapper .contaner .leftside form {
+	background:#CFC;
+	padding:50px;
+	width:90%;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+.wrapper .contaner .leftside h1 {
+	font-size:24px;
+	color:#000;
+	text-align:center;
+	padding:10px 0px
+}
+.wrapper .contaner .leftside input[type=submit] {
+	float:left;
+	padding:10px;
+	font-size:16px;
+	font-weight:bold;
+	background:#00F;
+	color:#FFF;
+	border-radius:5px;
+	margin-top:20px;
+}
+.wrapper .contaner .leftside input[type=file] {
+	display:block;
+}
+.wrapper .contaner .rightside {
+	width: 30%;
+	float:left;
+	padding-left:20px;
+	box-sizing:border-box;
+	border-left:1px solid #999;
+	background:#333;
+	color:#FFF;
+}
+.wrapper .contaner .rightside ul {
+	padding:0px;
+	margin:0px;
+}
+.wrapper .contaner .rightside ul li {
+	padding:0px 0px 10px 15px;
+	margin:0px;
+	list-style:inside;
+	line-height:20px;
+	font-size:14px;
+	color:#FFF;
+	list-style-type:disc;
+}
+
