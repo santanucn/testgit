@@ -24,6 +24,7 @@
                     <li>Test 3 text goes here</li>
                     <li>Test 4 text goes here</li>
 					<li>mt new info</li>
+					<li>a new one from master</li>
                 </ul>
             </div>
         </div>
