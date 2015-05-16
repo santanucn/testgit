@@ -36,7 +36,7 @@ function upload(){
 					
 	        $tmp_name = $_FILES["USER_upload"]["tmp_name"];
 	        move_uploaded_file($tmp_name, $taget_file);
-			echo 'success!!';		    
+			echo 'successfully done!!';		    
 		}else{
 			echo "failed!!";
 		}
